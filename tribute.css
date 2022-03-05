@@ -1,0 +1,125 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+div.intro{
+    text-align: center;
+    padding: 60px;
+    background-color: #331015;
+    font-style: italic;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alternate{
+    padding: 3px 0px;
+    animation-name: moving;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-fill-mode:backwards;
+    animation-duration: 40s;
+    margin: 0px 5px;
+    
+}
+   /* animatn: name     duration    timing-func           delay        iteration-count      filll-mode*/
+@keyframes moving {
+    0%{
+        transform:translateX(90%);
+        
+    }
+
+    100%{
+        transform:translateX(-90%);  
+            
+    }
+    
+}
+.intro h1{
+    font-size: 80px;
+    color:#c05e80;
+}
+.intro .i1{
+    padding: 20px;
+    font-size: 30px;
+    color: #88304b;    
+}
+.intro h2{
+    font-size: 34px;
+    color: #be6f87;
+ 
+}
+
+div.bio{
+    background-color: #c1c8d4;
+    border: none;
+    color: #922149;  
+    padding: 40px;  
+    height: 400px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.text .headline{
+    color: #491b2b;
+    font-size: 32px;
+    font-style: italic;
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+.bio .words{
+    font-size: 25px;
+    line-height: 2rem;
+    font-weight: bold;
+    padding: 9px;
+}
+
+p.words + p.words{
+    padding-top: 16px;
+}
+
+.image_div  .malcolm_img{
+    float: left;
+    border-radius: 50%;
+    shape-outside:circle();
+    max-width: 600px;
+    border: none;
+   
+} 
+
+.quote_bar .headline{
+    font-size: 39px;
+    color:  #682e39;
+}
+
+.quote_bar .words{
+    font-size: 20px;
+    color: #c26a75;  
+    padding-top: 36px;
+    font-weight: bold;
+    list-style-type: none;
+}
+.words li{
+    margin: 25px 13px;
+}
+
+div.quote_bar{
+    text-align: justify;
+    height: 600px;
+    background-color: black;
+    color: #703046;
+    height: auto;
+    padding: 20px;
+    line-height: 20px;
+    list-style-position: inside;
+    
+}
+
+
